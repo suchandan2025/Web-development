@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 <footer>
     <div class="container">
-        <div class="max-w-7xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-6 border-t " id='aa'>
+        {{-- <div class="max-w-7xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-6 border-t " id='aa'> --}}
             <!-- USA -->
             <div class="flex items-center gap-4 border-r border-[#17294b] pr-6">
                 <div class="bg-[#152b59] p-3 rounded">
@@ -54,7 +54,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        {{-- </div> --}}
 
         <div
             class="border-t border-orange-500/70 max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-6">
