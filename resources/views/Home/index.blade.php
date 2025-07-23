@@ -126,7 +126,7 @@
 
     #why-choose {
         background-color: #fff;
-        padding: 80px 0;
+      padding: 17px 0;
         text-align: center;
     }
 
@@ -227,7 +227,92 @@
         color: #ffffff !important;
     }
 </style>
+<style>
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; Full viewport height */
+  /* padding: 0rem; */
+  margin: 1px;
+}
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem 3rem;
+      max-width: 900px;
+      width: 100%;
 
+    }
+    .stat-card {
+      position: relative;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 2rem 2.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: rgba(0,0,0,0.1) 0 2px 6px;
+      transition: transform 0.2s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: rgba(0, 0, 0, 0.18) 0 8px 20px;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffe000;
+      user-select: none;
+      z-index: 1;
+    }
+    .stat-label {
+      margin-top: 0.4rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #0a1a2a;
+      user-select: none;
+      text-align: center;
+      z-index: 1;
+    }
+
+    /* Rain particle effect */
+    .rain-drop {
+      position: absolute;
+      top: -10px;
+      width: 2px;
+      height: 10px;
+      background: rgba(183, 210, 150, 0.5);
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-container {
+        gap: 1.5rem;
+      }
+      .stat-card {
+        padding: 1.4rem 1.8rem;
+      }
+      .stat-number {
+        font-size: 1.6rem;
+      }
+      .stat-label {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
 <!-- Hero Section -->
 <section id="hero" class="text-start">
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -542,7 +627,34 @@
         <button class="btn btn-discover-more">Discover More</button>
     </div>
 </section> --}}
-
+ <div class="center-wrapper">
+    <section class="stats-container" center aria-label="Company key statistics">
+    <article class="stat-card">
+      <div class="stat-number" data-target="250" data-suffix="+">0</div>
+      <div class="stat-label">Happy Providers</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number" data-target="150" data-suffix="+">0</div>
+      <div class="stat-label">Employee Team</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number" data-target="98" data-suffix="%">0</div>
+      <div class="stat-label">Clean Claim Rate</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number" data-target="50" data-suffix="+">0</div>
+      <div class="stat-label">Specialties Served</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number" data-target="95" data-suffix="%">0</div>
+      <div class="stat-label">Customer Satisfaction</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-number" data-target="13" data-suffix="+">0</div>
+      <div class="stat-label">Year Experience</div>
+    </article>
+  </section>
+ </div>
 <!-- Why Choose Us Section -->
 <section id="why-choose">
     <div class="container">
@@ -883,6 +995,47 @@
     renderSlider();
 </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.stat-number');
+      const duration = 2000; // animation duration
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const suffix = counter.getAttribute('data-suffix') || '';
+        const startTime = performance.now();
+        const card = counter.closest('.stat-card');
+
+        function animate(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const currentValue = Math.floor(progress * target);
+          counter.innerText = currentValue + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            counter.innerText = target + suffix;
+          }
+        }
+
+        requestAnimationFrame(animate);
+
+        // Add rain effect
+        const interval = setInterval(() => {
+          const drop = document.createElement('div');
+          drop.classList.add('rain-drop');
+          drop.style.left = Math.random() * 100 + '%';
+          drop.style.animationDuration = (Math.random() * 0.5 + 0.8) + 's';
+          card.appendChild(drop);
+          setTimeout(() => card.removeChild(drop), 1500);
+        }, 100);
+
+        // Stop rain after animation
+        setTimeout(() => clearInterval(interval), duration);
+      });
+    });
+  </script>
 </body>
 
 </html>
