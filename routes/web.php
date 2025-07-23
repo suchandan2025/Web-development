@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InerPageController;
+use App\Http\Controllers\ContactController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -19,3 +20,4 @@ Route::get('Big_data', [InerPageController::class, 'BigData'])->name("Big.data")
 Route::get('CRM_ERP_Solution', [InerPageController::class, 'CRMSolution'])->name("CRM.ERP.Solution");
 Route::get('Cloud_Hosting', [InerPageController::class, 'CloudHosting'])->name("Cloud.Hosting");
 Route::get('IT_Support', [InerPageController::class, 'ITSupport'])->name("IT.Support");
+Route::get('Contact', [ContactController::class, 'index'])->name("Contact");
