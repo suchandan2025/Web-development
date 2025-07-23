@@ -124,7 +124,7 @@
         </div>
     </div>
     <div class="copyright">
-        All Copyright © 2023 by XeroicTech.
+        All Copyright © 2023 by XeroicTech aa.
     </div>
 </footer>
 
