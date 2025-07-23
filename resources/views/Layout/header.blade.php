@@ -28,11 +28,11 @@
             --card-yellow-bg: #ffdf00;
         }
 
-        body {
+        /* body {
             font-family: 'Poppins', sans-serif;
             color: var(--dark-blue);
             background-color: var(--white);
-        }
+        } */
 
         /* --------- Top Bar --------- */
         #topbar {
@@ -56,43 +56,12 @@
             text-decoration: none;
         }
 
-        /* --------- Navbar --------- */
-        .navbar {
-            background-color: var(--white);
-            box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
-            font-weight: 600;
-            letter-spacing: 0.03em;
-        }
 
-        .navbar-nav .nav-link {
-            color: var(--dark-blue);
-            font-weight: 600;
-        }
 
-        .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-link.active {
-            color: var(--yellow);
-        }
-
-        .btn-login {
-            background-color: var(--button-bg-blue);
-            color: var(--white);
-            font-weight: 600;
-            padding: 0.4rem 1.2rem;
-            border-radius: 4px;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-login:hover {
-            background-color: var(--highlight-yellow);
-            color: var(--dark-blue);
-        }
 
         /* --------- Hero Section --------- */
         #hero {
-            background:
-                url("https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fa761d3e-8a71-4557-9562-eedbcd162b68.png") center/cover no-repeat;
+            background: url("assets/images/banner2.png") center/cover no-repeat;
             color: var(--white);
             padding: 7rem 0 5rem 0;
             position: relative;
@@ -103,14 +72,15 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(33, 44, 85, 0.9) 40%, rgba(33, 44, 85, 0.6) 100%);
+            /* background: linear-gradient(90deg, rgba(33, 44, 85, 0.9) 40%, rgba(33, 44, 85, 0.6) 100%); */
             z-index: 0;
         }
 
+        /*
         #hero .container {
             position: relative;
             z-index: 2;
-        }
+        } */
 
         #hero h1 {
             font-weight: 700;
@@ -186,32 +156,61 @@
 
         /* --------- Services Section --------- */
         #services {
-            padding: 4rem 0;
-            background: #ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 31px;
+            margin-top: -80px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+            padding: 1rem;
+            /* bottom: -935px; */
         }
 
         .service-card {
             box-shadow: 0 4px 15px rgb(34 41 47 / 10%);
-            border-radius: 6px;
-            background: #222020;
+            background: #ffffff;
             padding: 2rem 1.5rem;
             transition: box-shadow 0.3s ease;
             height: 100%;
+            border-style: solid;
+            border-color: #ffc107;
+            border-width: 0px 2px 0px 2px;
+
+
+        }
+
+        #services_conten>.col-md-3 {
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .service-card:hover {
-            box-shadow: 0 8px 35px rgb(34 41 47 / 15%);
+            transform: scale(1.05);
+            /* Zoom in */
+            background-color: #ffc107;
+            /* Change background */
+            color: #fff;
+            /* Change text color */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card:hover .service-icon {
+            color: #fff;
+            /* change icon color on hover */
+        }
+
+        .service-card h5,
+        .service-card p {
+            transition: color 0.3s ease;
         }
 
         .service-icon {
+            color: #ffc107;
             font-size: 2rem;
-            color: var(--yellow);
-            margin-bottom: 1rem;
-        }
-
-        .service-highlight {
-            background-color: var(--button-bg-yellow);
-            color: var(--dark-blue);
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
         }
 
         /* --------- About Us Section --------- */
@@ -352,7 +351,7 @@
         /* --------- Why Choose Us Section --------- */
         #why-choose {
             padding: 6rem 0 5rem;
-            background-color: #34334e;
+            background-color: #f1f1f7;
             text-align: center;
         }
 
@@ -360,12 +359,13 @@
             font-weight: 700;
             font-size: 2.25rem;
             margin-bottom: 0.2rem;
+            color: black;
         }
 
         #why-choose p.subheading {
             max-width: 620px;
             margin: auto;
-            color: var(--gray-dark);
+            color: black;
             margin-bottom: 3rem;
         }
 
@@ -380,7 +380,7 @@
         }
 
         #why-choose .why-card {
-            background-color: var(--gray-light);
+            background-color: #ffcb05;
             padding: 2rem 1.5rem;
             border-radius: 15px;
             box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
@@ -419,79 +419,61 @@
             border-radius: 2px;
         }
 
-        /* --------- Client Feedback Section --------- */
+
         #client-feedback {
-            background-color: #51515a;
-            color: var(--white);
-            padding: 5rem 1rem 6rem;
+            background: #4c6ef5;
+            padding: 80px 0;
             text-align: center;
+            color: white;
+        }
+
+        .testimonial-wrapper {
+            overflow: hidden;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
             position: relative;
         }
 
-        #client-feedback h3 {
-            font-weight: 700;
-            font-size: 1.8rem;
-            margin-bottom: 0.2rem;
+        .testimonial-track {
+            display: flex;
+            transition: transform 1s ease;
+            will-change: transform;
         }
 
-        #client-feedback h4 {
-            color: var(--yellow);
-            font-weight: 600;
-            margin-bottom: 2rem;
+        .testimonial-card {
+            flex: 0 0 320px;
+            margin: 0 10px;
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            opacity: 0.3;
+            filter: blur(2px);
+            transition: all 0.5s ease;
+            text-align: left;
         }
 
-        #client-feedback .testimonial-slide {
-            max-width: 640px;
-            margin: auto;
-            background-color: var(--white);
-            color: var(--dark-blue);
-            padding: 2.2rem 2rem;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgb(50 50 93 / 0.1);
-            font-style: italic;
-            position: relative;
-            min-height: 140px;
+        .testimonial-card.center {
+            opacity: 1;
+            filter: none;
+            transform: scale(1.05);
+            z-index: 2;
         }
 
-        #client-feedback .testimonial-slide p {
-            margin-bottom: 1.1rem;
-        }
-
-        #client-feedback .testimonial-slide .client-info {
+        .client-info {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            font-weight: 700;
-            font-style: normal;
+            gap: 10px;
+            margin-top: 15px;
         }
 
-        #client-feedback .testimonial-slide .client-info img {
-            width: 50px;
-            height: 50px;
+        .client-info img {
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
-        }
-
-        /* Carousel dots in client feedback */
-        #client-feedback-carousel-indicators {
-            margin-top: 2rem;
-        }
-
-        #client-feedback-carousel-indicators button {
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            border: none;
-            width: 14px;
-            height: 14px;
-            margin: 0 8px;
-            cursor: pointer;
-        }
-
-        #client-feedback-carousel-indicators button.active {
-            background-color: var(--yellow);
-            width: 18px;
-            height: 18px;
         }
 
         /* --------- Latest Blog Section --------- */
@@ -505,6 +487,7 @@
             font-weight: 700;
             font-size: 1.9rem;
             margin-bottom: 0.3rem;
+            color: black;
         }
 
         #latest-blog p.subheading {
@@ -651,18 +634,18 @@
         }
 
         #technologies .section-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffc107; /* Optional: yellow or accent color */
-  margin-bottom: 0.5rem;
-}
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffc107;
+            /* Optional: yellow or accent color */
+            margin-bottom: 0.5rem;
+        }
 
-#technologies h5 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
+        #technologies h5 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 
@@ -683,83 +666,38 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
-    <div class="container">
         <a class="navbar-brand" href="index.html">
             <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" height="50">
         </a>
-
-        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav align-items-center">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item dropdown custom-dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
-                        <li><a class="dropdown-item" href="#">Website Development</a></li>
-                        <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
-                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                        <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
-                        <li><a class="dropdown-item" href="#">App Development</a></li>
-                        <li><a class="dropdown-item" href="#">SEO & Content Writing</a></li>
-                        <li><a class="dropdown-item" href="#">AI Services</a></li>
-                        <li><a class="dropdown-item" href="#">Game Development</a></li>
-                        <li><a class="dropdown-item" href="#">Big Data</a></li>
-                        <li><a class="dropdown-item" href="#">CRM & ERP Solution</a></li>
-                        <li><a class="dropdown-item" href="#">Cloud Hosting</a></li>
-                        <li><a class="dropdown-item" href="#">IT Support</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Client Testimonial</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-            </ul>
-            <button class="btn btn-login ms-lg-3 my-2 my-lg-0" type="button">Log-in</button>
-        </div>
-    </div>
-</nav>
-
-    {{-- <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <div style="font-weight: 900; font-size: 1.4rem; color: var(--yellow)">X</div>
-                <div class="ms-2" style="color: var(--dark-blue); font-weight: 700; font-size: 1.2rem;">Xerotic</div>
-            </a>
+
+
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <div class="navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                     <li class="nav-item dropdown custom-dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="servicesDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#">Website Development</a></li>
-                            <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
-                            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                            <li><a class="dropdown-item" href="#">UI/UX Designing</a></li>
-                            <li><a class="dropdown-item" href="#">App Development</a></li>
-                            <li><a class="dropdown-item" href="#">SEO & Content Writing</a></li>
-                            <li><a class="dropdown-item" href="#">AI Services</a></li>
-                            <li><a class="dropdown-item" href="#">Game Development</a></li>
-                            <li><a class="dropdown-item" href="#">Big Data</a></li>
-                            <li><a class="dropdown-item" href="#">CRM & ERP Solution</a></li>
-                            <li><a class="dropdown-item" href="#">Cloud Hosting</a></li>
-                            <li><a class="dropdown-item" href="#">IT Support</a></li>
+                            <li><a class="dropdown-item" href="{{ route('website.development') }}">Website Development</a></li>
+                            <li><a class="dropdown-item" href="{{ route('graphic.designing') }}">Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('digital.marketing') }}">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('UI/UX.designing') }}">UI/UX Designing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('app.development') }}">App Development</a></li>
+                            <li><a class="dropdown-item" href="{{ route('SEO.Content') }}">SEO & Content Writing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('AI.Services') }}">AI Services</a></li>
+                            <li><a class="dropdown-item" href="{{ route('Game.Development') }}">Game Development</a></li>
+                            <li><a class="dropdown-item" href="{{ route('Big.data') }}">Big Data</a></li>
+                            <li><a class="dropdown-item" href="{{ route('CRM.ERP.Solution') }}">CRM & ERP Solution</a></li>
+                            <li><a class="dropdown-item" href="{{ route('Cloud.Hosting') }}">Cloud Hosting</a></li>
+                            <li><a class="dropdown-item" href="{{ route('IT.Support') }}">IT Support</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
@@ -769,7 +707,9 @@
                 <button class="btn btn-login ms-lg-3 my-2 my-lg-0" type="button">Log-in</button>
             </div>
         </div>
-    </nav> --}}
+    </nav>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const dropdown = document.querySelector('.nav-item.dropdown');
