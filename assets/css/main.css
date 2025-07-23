@@ -722,11 +722,10 @@ footer .logo-footer {
 }
 
 footer .logo-footer img {
-    width: 63px;
-    height: 63px;
-    background-color: #f0ad4e;
-    border-radius: 50%;
-    padding: 0.10rem;
+      width: 70px;
+    height: 70px;
+    padding: -0.9rem;
+    margin-top: -18px;
 }
 
 footer p.about-desc {
