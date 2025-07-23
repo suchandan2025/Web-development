@@ -525,7 +525,7 @@ adfsafdsg
                     alt="Hands typing on a laptop keyboard. Overlaid icons of HTML5, JavaScript, and PHP appear in front of glowing code snippets in the background. Digital tech concept" />
             </div>
 
-            <h2 id="content-title">Cloud Hosting</h2>
+            <h2 id="content-title" style="color:#ffc107;">Cloud Hosting</h2>
             <p>
                 At <strong>XeroicTech</strong>, delivers impactful graphic design solutions that go beyond aesthetics. We believe design is a strategic tool that communicates your brand’s vision, builds recognition, and influences customer behavior. Whether you're a startup looking for a brand identity or an established business aiming to revamp your visual assets, our creative team crafts designs that are both visually compelling and purpose-driven.
             </p>
