@@ -527,7 +527,7 @@ adfsafdsg
 
             <h2 id="content-title">Cloud Hosting</h2>
             <p>
-                At <strong>XeroicTech aaaaa</strong>, delivers impactful graphic design solutions that go beyond aesthetics. We believe design is a strategic tool that communicates your brand’s vision, builds recognition, and influences customer behavior. Whether you're a startup looking for a brand identity or an established business aiming to revamp your visual assets, our creative team crafts designs that are both visually compelling and purpose-driven.
+                At <strong>XeroicTech</strong>, delivers impactful graphic design solutions that go beyond aesthetics. We believe design is a strategic tool that communicates your brand’s vision, builds recognition, and influences customer behavior. Whether you're a startup looking for a brand identity or an established business aiming to revamp your visual assets, our creative team crafts designs that are both visually compelling and purpose-driven.
             </p>
             <p>
               From logos, packaging, social media creatives, and business cards to marketing brochures and web banners, our graphic design services cover every touchpoint of your brand’s presence. We design with intent, keeping your audience, industry trends, and business goals in focus. Every visual is built to not only attract but also convert—ensuring your design works for your brand, not just with it.
