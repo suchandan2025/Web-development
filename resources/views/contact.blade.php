@@ -1,17 +1,18 @@
 @extends('Layout.main')
 
 @section('container')
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
 
   .container {
-    max-width: 1100px;
-    margin: 40px auto;
+    max-width: 100%;
+    /* margin: 40px auto; */
     display: flex;
-    background: #f7f9fc;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px #00000012;
-    overflow: hidden;
+    /* background: #f7f9fc; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 6px 18px #00000012; */
+    /* overflow: hidden; */
   }
   .left, .right {
     padding: 32px 40px;
@@ -46,6 +47,10 @@
     color: #7a7a7a;
     margin-bottom: 24px;
   }
+
+
+
+  
   .office-entry strong {
     display: flex;
     align-items: center;
@@ -55,8 +60,8 @@
     gap: 8px;
   }
   .office-entry strong img.flag-icon {
-    width: 18px;
-    height: 12px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
   }
   .phone {
@@ -95,7 +100,7 @@
   }
   input[type="text"], input[type="email"], select, textarea {
     flex: 1 1 48%;
-    padding: 12px 40px 12px 12px;
+    padding: 13px 184px 16px 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
     background: #fff;
@@ -179,30 +184,30 @@
     }
   }
 </style>
-</head>
-<body>
+
+
   <section class="container" aria-label="Global Offices and Contact Form">
     <div class="left" role="region" aria-labelledby="section-title-offices">
       <h2 id="section-title-offices">Global Offices & Contact Numbers</h2>
       <p class="description">Reach out to our regional offices for tailored support and services.</p>
 
       <div class="office-entry" aria-label="USA office contact details">
-        <strong><img class="flag-icon" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80abe4de-6ea8-4cc1-95f2-875df90e3d67.png" alt="US flag icon">USA</strong>
-        <p>Devon Ave, Elk Grove Village, IL 60007</p>
-        <a href="tel:+18475820035" class="phone">(847) 582-0035</a>
+        <strong><img class="flag-icon" src="{{ asset('assets/images/usa-flag.png') }}" alt="US flag icon">USA</strong>
+        <p> 2803 Philadelphia Pike B, Claymont, DE 19703, United States</p>
+        <a href="tel:+18475820035" class="phone">(+1)  213-643-0502</a>
       </div>
       <div class="divider" aria-hidden="true"></div>
 
       <div class="office-entry" aria-label="Australia office contact details">
-        <strong><img class="flag-icon" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/474dbfc1-1cc2-4d03-b3dc-8c804910a2ea.png" alt="Australia flag icon">Australia</strong>
-        <p>PIMPAMA QLD 4209</p>
-        <a href="tel:+61730409911" class="phone">07-3040-9911</a>
+        <strong><img class="flag-icon" src="{{ asset('assets/images/australia-flag.png') }}" alt="Australia flag icon">Australia</strong>
+        <p>2803 Philadelphia Pike B, Claymont, DE 19703, United States</p>
+        <a href="tel:+61730409911" class="phone">(+1)  213-643-0502</a>
       </div>
       <div class="divider" aria-hidden="true"></div>
 
       <div class="office-entry" aria-label="India office contact details">
-        <strong><img class="flag-icon" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70da2f7e-ce51-4375-84fa-818ca40cd3fb.png" alt="India flag icon">India</strong>
-        <p>12th Floor, Aurora Waterfront, GN Block Unit 1204, Sector V, Kolkata 700091</p>
+        <strong><img class="flag-icon" src="{{ asset('assets/images/indian-flag.png') }}" alt="India flag icon">India</strong>
+        <p>1701, 17th Floor, Aurora Waterfront, GN 34/1, beside IEM Ashram Building, GN Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091</p>
         <a href="tel:+917980707600" class="phone">79-8070-7600</a>
       </div>
       <div class="divider" aria-hidden="true"></div>
