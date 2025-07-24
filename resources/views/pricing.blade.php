@@ -36,7 +36,7 @@
 
 
 
-    <section class="fix">
+    <section class="fix" style="    background: #fbf9ee;">
         <div class="container-fluid">
 
 
