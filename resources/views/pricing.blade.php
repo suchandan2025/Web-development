@@ -159,7 +159,7 @@
                                         <h2>$880 <sub>/ 9 Months</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/google.webp') }}"> alt="img">
+                                        <img src="{{ asset('assets/images/google.webp') }}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
