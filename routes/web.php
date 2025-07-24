@@ -1,9 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InerPageController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PricingtController;
+use Illuminate\Support\Facades\Route;
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -21,3 +23,4 @@ Route::get('CRM_ERP_Solution', [InerPageController::class, 'CRMSolution'])->name
 Route::get('Cloud_Hosting', [InerPageController::class, 'CloudHosting'])->name("Cloud.Hosting");
 Route::get('IT_Support', [InerPageController::class, 'ITSupport'])->name("IT.Support");
 Route::get('Contact', [ContactController::class, 'index'])->name("Contact");
+Route::get('pricing', [PricingtController::class, 'index'])->name("pricing");
