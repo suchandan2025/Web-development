@@ -701,7 +701,7 @@
                             <li><a class="dropdown-item" href="{{ route('IT.Support') }}">IT Support</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('pricing') }}">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Client Testimonial</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                 </ul>
