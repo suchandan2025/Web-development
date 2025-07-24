@@ -34,7 +34,11 @@
 
 
 
-
+<style>
+    li {
+    color: black;
+}
+</style>
 
     <section class="fix" style="    background: #fbf9ee;">
         <div class="container-fluid">

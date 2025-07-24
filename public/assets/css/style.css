@@ -31363,7 +31363,9 @@ blockquote>span::after {
 .pricing-box-items {
     margin-bottom: 38px;
 }
-
+li {
+    color: black;
+}
 .location {
     border-bottom: 1px dotted #afa2a2;
     /* padding-top: 30px; */
