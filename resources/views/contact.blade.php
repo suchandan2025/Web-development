@@ -20,6 +20,7 @@
   .left {
     width: 50%;
     border-right: 1px solid #ddd;
+        background: #ffffff;
   }
   .right {
     width: 50%;
@@ -186,7 +187,7 @@
 </style>
 
 
-  <section class="container" aria-label="Global Offices and Contact Form">
+  <section class="container" aria-label="Global Offices and Contact Form" id="contact">
     <div class="left" role="region" aria-labelledby="section-title-offices">
       <h2 id="section-title-offices">Global Offices & Contact Numbers</h2>
       <p class="description">Reach out to our regional offices for tailored support and services.</p>
