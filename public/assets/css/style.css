@@ -31356,7 +31356,7 @@ blockquote>span::after {
 .pricing-box-items {
     border-radius: 20px;
     border: 1px solid #D4DCFF;
-    background: var(--white);
+      background: #0e2936;
     padding: 20px 17px;
 }
 
