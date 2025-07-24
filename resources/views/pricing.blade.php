@@ -87,7 +87,7 @@
                                         <h2>$550 <sub>/ 6 Months</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/google.webp" alt="img">
+                                        <img src="{{ asset('assets/images/google.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -159,7 +159,7 @@
                                         <h2>$880 <sub>/ 9 Months</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/google.webp" alt="img">
+                                        <img src="{{ asset('assets/images/google.webp') }}"> alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -234,7 +234,7 @@
                                         <h2>$1100 <sub>/ 12 Months</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/google.webp" alt="img">
+                                        <img src="{{ asset('assets/images/google.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -323,7 +323,7 @@
                                         <h2>$1320 <sub>/ One Time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-programming.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-programming.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -360,7 +360,7 @@
                                         <h2>$1650 <sub>/ One Time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-programming.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-programming.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -399,7 +399,7 @@
                                         <h2>$1980 <sub>/ One Time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-programming.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-programming.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -439,7 +439,7 @@
                                         <h2>$5500 <sub>/ One Time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-programming.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-programming.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -501,7 +501,7 @@
                                         <h2>$440 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/seo.webp" alt="img">
+                                        <img src="{{ asset('assets/images/seo.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -554,7 +554,7 @@
                                         <h2>$550 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/seo.webp" alt="img">
+                                        <img src="{{ asset('assets/images/seo.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -610,7 +610,7 @@
                                         <h2>$660 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/seo.webp" alt="img">
+                                        <img src="{{ asset('assets/images/seo.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -693,7 +693,7 @@
                                         <h2>$385 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/bullhorn.webp" alt="img">
+                                        <img src="{{ asset('assets/images/bullhorn.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -727,7 +727,7 @@
                                         <h2>$495 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/bullhorn.webp" alt="img">
+                                        <img src="{{ asset('assets/images/bullhorn.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -770,7 +770,7 @@
                                         <h2>$660 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/bullhorn.webp" alt="img">
+                                        <img src="{{ asset('assets/images/bullhorn.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -841,7 +841,7 @@
                                         <h2>$550 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/adwords.webp" alt="img">
+                                        <img src="{{ asset('assets/images/adwords.webp')}}" alt="img">
                                     </div>
                                 </div>
 
@@ -880,7 +880,7 @@
                                         <h2>$800 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/adwords.webp" alt="img">
+                                        <img src="{{ asset('assets/images/adwords.webp')}}" alt="img">
                                     </div>
                                 </div>
 
@@ -920,7 +920,7 @@
                                         <h2>$1500 <sub>/ Month</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/adwords.webp" alt="img">
+                                        <img src="{{ asset('assets/images/adwords.webp')}}" alt="img">
                                     </div>
                                 </div>
 
@@ -969,7 +969,7 @@
                                         <h2>$1500 <sub>/ One-time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/logo.webp" alt="img">
+                                        <img src="{{ asset('assets/images/logo.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -999,7 +999,7 @@
                                         <h2>$1800 <sub>/ One-time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/app-store.webp" alt="img">
+                                        <img src="{{ asset('assets/images/app-store.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -1029,7 +1029,7 @@
                                         <h2>$3200 <sub>/ One-time</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/apk.webp" alt="img">
+                                        <img src="{{ asset('assets/images/apk.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -1073,7 +1073,7 @@
                                         <h2>$330 <sub>/ Year</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-hosting.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-hosting.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -1102,7 +1102,7 @@
                                         <h2>$440 <sub>/ Year</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-hosting.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-hosting.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
@@ -1135,7 +1135,7 @@
                                         <h2>$770 <sub>/ Year</sub></h2>
                                     </div>
                                     <div class="icon">
-                                        <img src="assets/img/web-hosting.webp" alt="img">
+                                        <img src="{{ asset('assets/images/web-hosting.webp')}}" alt="img">
                                     </div>
                                 </div>
                                 <ul class="price-list">
