@@ -30,6 +30,7 @@
     font-weight: 600;
     font-size: 1.4rem;
     margin-bottom: 8px;
+    color: black;
   }
   .subheading {
     font-weight: 600;
