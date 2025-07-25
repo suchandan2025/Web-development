@@ -766,7 +766,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('Contact') }}">Contact Us</a></li>
                 </ul>
-                {{-- <button class="btn btn-login ms-lg-3 my-2 my-lg-0" type="button">Log-in</button> --}}
+
                 <a class="btn btn-login ms-lg-3 my-2 my-lg-0" href="{{ url('/Brochure.final') }}"
                     class="vertical-download-btn" download>
                     <i class="fas fa-download"></i>Brochure.PDF
