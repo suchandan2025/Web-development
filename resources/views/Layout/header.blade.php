@@ -762,7 +762,8 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('pricing') }}">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Client Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('Testimonial') }}">Client Testimonial</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('Contact') }}">Contact Us</a></li>
                 </ul>
                 <button class="btn btn-login ms-lg-3 my-2 my-lg-0" type="button">Log-in</button>
