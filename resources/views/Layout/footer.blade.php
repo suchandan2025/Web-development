@@ -65,7 +65,7 @@
             <section class="footer-col" aria-labelledby="footer-about-title" id="foot">
                 <h2 class="logo-footer">
                     <a class="navbar-brand" href="index.html">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" height="50">
+                        <img src="{{ asset('assets/images/logo1.png') }}" alt="Logo" height="50">
                     </a>
                 </h2>
                 <p id="footer-about-title" class="about-desc">

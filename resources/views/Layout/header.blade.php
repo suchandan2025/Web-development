@@ -690,7 +690,7 @@
                 <span>We Provide High Quality &amp; Cost Effective Services</span>
 
                 <span class="d-flex align-items-center gap-1 border-start ps-2">
-                    <img src="{{ asset('assets/images/indian-flag.png') }}" alt="India" style="width: 16px;">
+                    <img src="{{ asset('assets/images/whatsapp.png') }}" alt="India" style="width: 16px;">
                     (+91) 98624-76791
                 </span>
                 <span class="d-flex align-items-center gap-1 border-start ps-2">
