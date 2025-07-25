@@ -4,7 +4,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
     body {
-        background-color: #fff4ab;
+        background-color: #fffeea;
         color: #fff;
     }
 
@@ -78,7 +78,7 @@
 <section>
     <div class="section-title">
         <h5>TESTIMONIALS</h5>
-        <h2>HEAR DIRECTLY FROM OUR<br>HAPPY CLIENTS!</h2>
+        <h2 style="color: #000">HEAR DIRECTLY FROM OUR<br>HAPPY CLIENTS!</h2>
     </div>
 
     <div class="video-gallery">
