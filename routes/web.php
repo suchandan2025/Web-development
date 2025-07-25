@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InerPageController;
 use App\Http\Controllers\PricingtController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Response;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -25,3 +26,17 @@ Route::get('IT_Support', [InerPageController::class, 'ITSupport'])->name("IT.Sup
 Route::get('Contact', [ContactController::class, 'index'])->name("Contact");
 Route::get('pricing', [PricingtController::class, 'index'])->name("pricing");
 Route::get('Testimonial', [InerPageController::class, 'Testimonial'])->name("Testimonial");
+
+
+
+
+Route::get('/download-pdf', function () {
+    $filePath = public_path('/pdfs/Brochure.final.pdf'); // Adjust path as needed
+    $fileName = 'client-testimonial.pdf';
+
+    if (file_exists($filePath)) {
+        return response()->download($filePath, $fileName);
+    } else {
+        abort(404, 'File not found.');
+    }
+    });
