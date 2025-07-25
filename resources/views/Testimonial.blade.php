@@ -3,10 +3,10 @@
 @section('container')
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-    body {
+    /* body {
         background-color: #fffeea;
         color: #fff;
-    }
+    } */
 
     .testimonial-header {
         background: url("assets/images/banner3.png") center/cover no-repeat;
@@ -75,7 +75,8 @@
 </section>
 
 <!-- Testimonials Section -->
-<section>
+<section style="background-color: #fffeea;
+        color: #fff;">
     <div class="section-title">
         <h5>TESTIMONIALS</h5>
         <h2 style="color: #000">HEAR DIRECTLY FROM OUR<br>HAPPY CLIENTS!</h2>
