@@ -36,7 +36,7 @@
         } */
 
         /* --------- Top Bar --------- */
-        #topbar {
+        /* #topbar {
             background-color: var(--dark-blue);
             color: var(--white);
             font-size: 0.875rem;
@@ -55,7 +55,7 @@
         #topbar a.social-link:hover {
             color: var(--yellow);
             text-decoration: none;
-        }
+        } */
 
 
 
@@ -648,13 +648,31 @@
             margin-bottom: 2rem;
         }
     </style>
+    <style>
+        .top-bar img {
+            width: 16px;
+            height: auto;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #f0ad4e;
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- Topbar -->
-    <div id="topbar" class="d-flex justify-content-between align-items-center px-3">
+    {{-- <div id="topbar" class="d-flex justify-content-between align-items-center px-3">
         <div class="text-start small">
             Provide High Quality & Cost Effective Service
+            <span><img src="{{ asset('assets/images/usa-flag.png') }}">3024124102</span>
+            <span>sales@xeroictech.com</span>
         </div>
         <div class="text-end">
             Follow Us On
@@ -662,6 +680,42 @@
             <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div> --}}
+    <!-- Top Info Bar -->
+    <div class="bg-dark text-white py-1 small">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Left Side Info -->
+            <div class="d-flex align-items-center flex-wrap gap-3">
+                <span>We Provide High Quality &amp; Cost Effective Services</span>
+
+                <span class="d-flex align-items-center gap-1 border-start ps-2">
+                    <img src="{{ asset('assets/images/indian-flag.png') }}" alt="India" style="width: 16px;">
+                    (+91) 98624-76791
+                </span>
+                <span class="d-flex align-items-center gap-1 border-start ps-2">
+                    <img src="{{ asset('assets/images/australia-flag.png') }}" alt="Australia" style="width: 16px;">
+                    302412-4102
+                </span>
+                <span class="d-flex align-items-center gap-1 border-start ps-2">
+                    <img src="{{ asset('assets/images/usa-flag.png') }}" alt="USA" style="width: 16px;">
+                    302412-4102
+                </span>
+                <span class="d-flex align-items-center gap-1 border-start ps-2">
+                    <img src="{{ asset('assets/images/email.png') }}" alt="EMAIL" style="width: 16px;">
+                    sales@xeroictech.com
+                </span>
+            </div>
+
+            <!-- Right Side Social Icons -->
+            <div class="d-flex align-items-center gap-2">
+                <span class="me-2">Follow Us On:</span>
+                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
 
@@ -687,16 +741,22 @@
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="{{ route('website.development') }}">Website Development</a></li>
-                            <li><a class="dropdown-item" href="{{ route('graphic.designing') }}">Graphic Designing</a></li>
-                            <li><a class="dropdown-item" href="{{ route('digital.marketing') }}">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('website.development') }}">Website
+                                    Development</a></li>
+                            <li><a class="dropdown-item" href="{{ route('graphic.designing') }}">Graphic Designing</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('digital.marketing') }}">Digital Marketing</a>
+                            </li>
                             <li><a class="dropdown-item" href="{{ route('UI/UX.designing') }}">UI/UX Designing</a></li>
                             <li><a class="dropdown-item" href="{{ route('app.development') }}">App Development</a></li>
-                            <li><a class="dropdown-item" href="{{ route('SEO.Content') }}">SEO & Content Writing</a></li>
+                            <li><a class="dropdown-item" href="{{ route('SEO.Content') }}">SEO & Content Writing</a>
+                            </li>
                             <li><a class="dropdown-item" href="{{ route('AI.Services') }}">AI Services</a></li>
-                            <li><a class="dropdown-item" href="{{ route('Game.Development') }}">Game Development</a></li>
+                            <li><a class="dropdown-item" href="{{ route('Game.Development') }}">Game Development</a>
+                            </li>
                             <li><a class="dropdown-item" href="{{ route('Big.data') }}">Big Data</a></li>
-                            <li><a class="dropdown-item" href="{{ route('CRM.ERP.Solution') }}">CRM & ERP Solution</a></li>
+                            <li><a class="dropdown-item" href="{{ route('CRM.ERP.Solution') }}">CRM & ERP Solution</a>
+                            </li>
                             <li><a class="dropdown-item" href="{{ route('Cloud.Hosting') }}">Cloud Hosting</a></li>
                             <li><a class="dropdown-item" href="{{ route('IT.Support') }}">IT Support</a></li>
                         </ul>
