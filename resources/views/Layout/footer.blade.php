@@ -15,7 +15,8 @@
                 </div>
                 <div>
                     <p class="uppercase font-semibold text-white text-sm">USA</p>
-                    <p class="text-xs leading-tight max-w-[13rem] text-gray-400">Devon Ave, Elk Grove Village, IL 60007
+                    <p class="text-xs leading-tight max-w-[13rem] text-gray-400">2803 Philadelphia Pike B, Claymont, DE
+                        19703, United States
                     </p>
                 </div>
             </div>
@@ -32,7 +33,8 @@
                 </div>
                 <div>
                     <p class="uppercase font-semibold text-white text-sm">Australia</p>
-                    <p class="text-xs leading-tight max-w-[10rem] text-gray-400">Pimpama, QLD 4209</p>
+                    <p class="text-xs leading-tight max-w-[10rem] text-gray-400">2803 Philadelphia Pike B, Claymont, DE
+                        19703, United States</p>
                 </div>
             </div>
 
@@ -49,12 +51,13 @@
                 <div>
                     <p class="uppercase font-semibold text-white text-sm">India</p>
                     <p class="text-xs leading-tight max-w-[14rem] text-gray-400">
-                        12th Floor, Aurora Waterfront, GN Block<br />
-                        Unit 1204, Sector V, Kolkata 700091
+                        1701, 17th Floor, Aurora Waterfront, GN 34/1, beside IEM Ashram Building, GN Block,<br />
+                        Sector V, Bidhannagar, Kolkata, West Bengal 700091
                     </p>
                 </div>
             </div>
-        {{-- </div> --}}
+            {{--
+        </div> --}}
 
         <div
             class="border-t border-orange-500/70 max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-6">
@@ -82,30 +85,31 @@
             <section class="footer-col" aria-labelledby="footer-quick-links-title">
                 <h3 id="footer-quick-links-title" class="footer-title">Quick Links</h3>
                 <ul class="list-links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    {{-- <li><a href="#">Service</a></li> --}}
+                    <li><a href="{{ route('pricing') }}">Pricing</a></li>
+                    <li><a href="{{ route('Contact') }}">Contact Us</a></li>
                 </ul>
             </section>
 
             <section class="footer-col" aria-labelledby="footer-services-title">
                 <h3 id="footer-services-title" class="footer-title">Our Service</h3>
                 <ul class="list-links">
-                    <li><a href="#">Website Development</a></li>
-                    <li><a href="#">Graphic Designing</a></li>
-                    <li><a href="#">Digital Marketing</a></li>
-                    <li><a href="#">UI/UX Designing</a></li>
-                    <li><a href="#">App Development</a></li>
+                    <li><a href="{{ route('website.development') }}">Website Development</a></li>
+                    <li><a href="{{ route('graphic.designing') }}">Graphic Designing</a></li>
+                    <li><a href="{{ route('digital.marketing') }}">Digital Marketing</a></li>
+                    <li><a href="{{ route('UI/UX.designing') }}">UI/UX Designing</a></li>
+                    <li><a href="{{ route('app.development') }}">App Development</a></li>
                 </ul>
             </section>
 
             <section class="footer-col" aria-labelledby="footer-gallery-title">
                 <h3 id="footer-gallery-title" class="footer-title">About Us</h3>
                 <div class="footer-gallery" aria-label="Gallery preview images">
-                            <li><a href="#">-----</a></li>
-                    {{-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b21fc290-08d4-4da3-a0e0-794ca451f2cb.png"
+                    <li><a href="#">-----</a></li>
+                    {{-- <img
+                        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b21fc290-08d4-4da3-a0e0-794ca451f2cb.png"
                         alt="Gallery preview showing digital team working on laptops" loading="lazy" />
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9e088e57-1155-4443-a7cf-e255430b07fa.png"
                         alt="Gallery preview showing brainstorming session with post-it notes on wall" loading="lazy" />
@@ -118,7 +122,8 @@
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9365c143-a528-44e7-9bca-c363d181c0f6.png"
                         alt="Gallery preview showing a close-up of handshake in business meeting" loading="lazy" />
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af470ee5-e4b2-44d3-b9f5-17e064119b35.png"
-                        alt="Gallery preview showing programmer coding on laptop with code editors" loading="lazy" /> --}}
+                        alt="Gallery preview showing programmer coding on laptop with code editors" loading="lazy" />
+                    --}}
                 </div>
             </section>
         </div>

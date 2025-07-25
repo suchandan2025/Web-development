@@ -227,7 +227,7 @@
             <strong><img class="flag-icon" src="{{ asset('assets/images/usa-flag.png') }}"
                     alt="US flag icon">USA</strong>
             <p> 2803 Philadelphia Pike B, Claymont, DE 19703, United States</p>
-            <a href="tel:+213-643-0502" class="phone">(+1) 213-643-0502</a>
+            <a href="tel:+213-643-0502" class="phone">(+1) 3024124102</a>
         </div>
         <div class="divider" aria-hidden="true"></div>
 
@@ -235,7 +235,7 @@
             <strong><img class="flag-icon" src="{{ asset('assets/images/australia-flag.png') }}"
                     alt="Australia flag icon">Australia</strong>
             <p>2803 Philadelphia Pike B, Claymont, DE 19703, United States</p>
-            <a href="tel:+213-643-0502" class="phone">(+1) 213-643-0502</a>
+            <a href="tel:+213-643-0502" class="phone">(+1) 3024124102</a>
         </div>
         <div class="divider" aria-hidden="true"></div>
 

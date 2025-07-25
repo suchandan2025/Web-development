@@ -722,7 +722,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
         <a class="navbar-brand" href="index.html">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" height="50">
+            <img src="{{ asset('assets/images/logo1.png') }}" alt="Logo" height="50">
         </a>
         <div class="container">
 
