@@ -1,4 +1,21 @@
 <!-- Footer -->
+<style>
+    #laicent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        /* spacing between logos */
+        padding: 20px 0;
+        flex-wrap: wrap;
+        /* allows wrapping on small screens */
+    }
+
+    #laicent img {
+        height: 50px;
+    }
+</style>
+
 <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 <footer>
     <div class="container">
@@ -127,6 +144,12 @@
                 </div>
             </section>
         </div>
+    </div>
+    <div id="laicent">
+        <img src="{{ asset('assets/images/a1 (1).jpg') }}" alt="Logo" height="50">
+        <img src="{{ asset('assets/images/a1 (2).jpg') }}" alt="Logo" height="50">
+        <img src="{{ asset('assets/images/a1 (3).jpg') }}" alt="Logo" height="50">
+        <img src="{{ asset('assets/images/a1 (4).jpg') }}" alt="Logo" height="50">
     </div>
     <div class="copyright">
         All Copyright © 2023 by XeroicTech.
