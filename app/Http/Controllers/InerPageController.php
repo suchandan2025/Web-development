@@ -42,4 +42,7 @@ class InerPageController extends Controller
     public function ITSupport(){
         return view("IT_Support");
     }
+    public function Testimonial(){
+        return view("Testimonial");
+    }
 }

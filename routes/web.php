@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [HomeController::class, 'index'])->name("home");
 Route::get('website-development', [InerPageController::class, 'index'])->name("website.development");
-Route::get('graphic_designing', [InerPageController::class, 'GraphicDesigning'])->name("graphic.designing");
+Route::get('graphic_designing', action: [InerPageController::class, 'GraphicDesigning'])->name("graphic.designing");
 Route::get('digital_marketing', [InerPageController::class, 'DigitalMarketing'])->name("digital.marketing");
 Route::get('ui_ux_designing', [InerPageController::class, 'UI_UX_Designing'])->name("UI/UX.designing");
 Route::get('App_Development', [InerPageController::class, 'AppDevelopment'])->name("app.development");
@@ -24,3 +24,4 @@ Route::get('Cloud_Hosting', [InerPageController::class, 'CloudHosting'])->name("
 Route::get('IT_Support', [InerPageController::class, 'ITSupport'])->name("IT.Support");
 Route::get('Contact', [ContactController::class, 'index'])->name("Contact");
 Route::get('pricing', [PricingtController::class, 'index'])->name("pricing");
+Route::get('Testimonial', [InerPageController::class, 'Testimonial'])->name("Testimonial");
